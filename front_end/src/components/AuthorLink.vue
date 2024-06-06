@@ -21,3 +21,4 @@ const displayName = computed(() => {
     {{ displayName }}
   </RouterLink>
 </template>
+<style scoped src="../style.css"></style>

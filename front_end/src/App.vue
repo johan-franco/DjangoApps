@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
@@ -8,34 +8,62 @@ import { RouterLink, RouterView } from "vue-router";
       <h1>My Blog 🐾</h1>
       <nav>
         <RouterLink to="/">Posts</RouterLink>
-
-</nav>
-</div>
-</header>
-
-<RouterView />
+      </nav>
+    </div>
+  </header>
+  <body>
+    
+  
+  <RouterView />
+</body>
 </template>
 
 <style scoped>
-h1 {
-text-align: center;
-font-weight: bold;
-margin-bottom: 1rem;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0056b3; 
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: white;
+}
+header {
+  background-color: #0056b3; 
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header {
-border-bottom: 1px solid #ccc;
-margin-bottom: 1rem;
+header .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 nav {
-text-align: center;
-margin: 1rem 0;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 nav a {
-padding: 0.5rem;
+  color: white; 
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5
+
+}
+  nav a:hover {
+  background-color: #004494; 
 }
 </style>
-
-<!-- ... -->

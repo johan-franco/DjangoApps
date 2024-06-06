@@ -25,3 +25,4 @@ const props = defineProps({
     </li>
   </ol>
 </template>
+<style scoped src="../style.css"></style>

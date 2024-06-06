@@ -42,6 +42,8 @@
   `;
   
   const { result, loading, error } = useQuery(ALL_POSTS_QUERY);
+  
   </script>
   
-  
+  <style scoped src="../style.css">
+</style>
